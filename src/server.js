@@ -6,9 +6,5 @@ app.get('/',(req, res)=>{
     res.status(200)
     res.json({message:'hello'})
 })
-app.post('/api/post',(req,res)=>{
 
-})
-
-app.put()
 app.listen(8080)
