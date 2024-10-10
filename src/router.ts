@@ -6,16 +6,16 @@ router.get('/product',(req, res)=>{
         res.json({message: "hi"});
 });
 
-router.get('/product/:id',()=>{
+router.get('/product/:id',(req, res)=>{
+        res.json({message: req.shhh_secret});
+});
+router.put('/product/:id',(req, res)=>{
 
 });
-router.put('/product/:id',()=>{
+router.post('/product',(req, res)=>{
 
 });
-router.post('/product',()=>{
-
-});
-router.delete('/product/:id',()=>{
+router.delete('/product/:id',(req, res)=>{
 
 });
 
@@ -23,20 +23,20 @@ router.delete('/product/:id',()=>{
         UPDATES 
 */
 
-router.get('/update',()=>{
+router.get('/update',(req, res)=>{
 
 });
 
-router.get('/update/:id',()=>{
+router.get('/update/:id',(req, res)=>{
 
 });
-router.put('/update/:id',()=>{
+router.put('/update/:id',(req, res)=>{
 
 });
-router.post('/update',()=>{
+router.post('/update',(req, res)=>{
 
 });
-router.delete('/update/:id',()=>{
+router.delete('/update/:id',(req, res)=>{
 
 });
 
@@ -44,19 +44,19 @@ router.delete('/update/:id',()=>{
         UPDATE POINT
 */
 
-router.get('/updatepoint',()=>{
+router.get('/updatepoint',(req, res)=>{
 
 });
-router.get('/updatepoint/:id',()=>{
+router.get('/updatepoint/:id',(req, res)=>{
 
 });
-router.put('/updatepoint/:id',()=>{
+router.put('/updatepoint/:id',(req, res)=>{
 
 });
-router.post('/updatepoint',()=>{
+router.post('/updatepoint',(req, res)=>{
 
 });
-router.delete('/updatepoint/:id',()=>{
+router.delete('/updatepoint/:id',(req, res)=>{
 
 });
 
