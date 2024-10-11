@@ -19,13 +19,15 @@ export const signin = async (req, res) => {
                 username: req.body.username
         }
         });
+
         console.log("username: ",user);
         const isValid = await comparePasswords(req.body.password, user.password);
+        console.log(isValid);
         if(!isValid){
                 res.status(401);
                 res.json({message: "nope"});
                 return;
         }
-
        const token = createJWT(user);
+       res.json({token})
 }

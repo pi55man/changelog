@@ -42,9 +42,9 @@ export const protect = (req, res, next) => {
 }
 
 
-export const comparePasswords = (password, hash) => {
-        console.log("in comparepasswords, ", password)
-        return bcrypt.compare(password, hash);
+export const comparePasswords = async(password, hash) => {
+        const match = await bcrypt.compare(password, hash);
+        return match;
 }
 
 export const hashPassword = (password) =>{
