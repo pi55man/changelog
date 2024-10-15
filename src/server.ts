@@ -11,10 +11,6 @@ app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
-app.use((req, res, next)=>{
-        next();
-})
-
 app.get('/',protect,(req, res)=>{
     console.log('app.get');  
     res.status(200);
